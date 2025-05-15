@@ -1,4 +1,4 @@
-package com.qspiders.pages;
+package com.qspiders.pages.elements.textfield;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.qspiders.utility.CustomUtilities;
 
 
-public class RegisterPage {
+public class WithPlaceholderPage {
 	WebDriver driver;
 	CustomUtilities utilites;
 	WebDriverWait wait;
 
-	public RegisterPage(WebDriver driver) {
+	public WithPlaceholderPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		utilites = new CustomUtilities();

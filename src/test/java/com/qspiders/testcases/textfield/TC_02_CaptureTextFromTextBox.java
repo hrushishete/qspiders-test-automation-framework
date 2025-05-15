@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qspiders.configurations.TestSuiteBase;
-import com.qspiders.pages.RegisterPage;
+import com.qspiders.pages.elements.textfield.WithPlaceholderPage;
 
 public class TC_02_CaptureTextFromTextBox extends TestSuiteBase
 {
@@ -12,7 +12,7 @@ public class TC_02_CaptureTextFromTextBox extends TestSuiteBase
 	@Test
 	public void getTextFromTextBox()
 	{
-		RegisterPage page=new RegisterPage(getDriver());
+		WithPlaceholderPage page=new WithPlaceholderPage(getDriver());
 		
 		page.enterName(property.getproperties("userName"));
 		String name=page.getEnteredName();

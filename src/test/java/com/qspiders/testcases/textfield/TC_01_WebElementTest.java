@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qspiders.configurations.TestSuiteBase;
-import com.qspiders.pages.RegisterPage;
+import com.qspiders.pages.elements.textfield.WithPlaceholderPage;
 import com.qspiders.utility.PropertyUtils;
 
 public class TC_01_WebElementTest extends TestSuiteBase {
@@ -15,7 +15,7 @@ public class TC_01_WebElementTest extends TestSuiteBase {
 	@Test
 	public void registerUser() {
 		// Write a script to enter data into Text field?
-		RegisterPage registerPage = new RegisterPage(getDriver());
+		WithPlaceholderPage registerPage = new WithPlaceholderPage(getDriver());
 		System.out.println(name);
 		registerPage.enterName(name);
 		registerPage.enterEmail(email);

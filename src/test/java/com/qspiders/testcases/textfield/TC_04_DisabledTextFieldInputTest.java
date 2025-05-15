@@ -3,7 +3,7 @@ package com.qspiders.testcases.textfield;
 import org.testng.annotations.Test;
 
 import com.qspiders.configurations.TestSuiteBase;
-import com.qspiders.pages.RegisterPage;
+import com.qspiders.pages.elements.textfield.WithPlaceholderPage;
 
 public class TC_04_DisabledTextFieldInputTest extends TestSuiteBase{
 	//Write a script to enter data into disabled text field?
@@ -11,7 +11,7 @@ public class TC_04_DisabledTextFieldInputTest extends TestSuiteBase{
 	@Test
 	public void disabledTextFieldInputTest()
 	{
-		RegisterPage page=new RegisterPage(getDriver());
+		WithPlaceholderPage page=new WithPlaceholderPage(getDriver());
 		page.clickOnDisabledAction();
 		page.enterName(property.getproperties("userName"));
 		page.enterEmail(property.getproperties("userEmail"));

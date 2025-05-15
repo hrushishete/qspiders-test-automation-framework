@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.qspiders.configurations.TestSuiteBase;
-import com.qspiders.pages.RegisterPage;
+import com.qspiders.pages.elements.textfield.WithPlaceholderPage;
 
 
 public class TC_03_GetPlaceholderName extends TestSuiteBase {
@@ -12,7 +12,7 @@ public class TC_03_GetPlaceholderName extends TestSuiteBase {
 	public void placeholderName() 
 	{
 		//Write a script to validate placeholder is present in the text field?
-		RegisterPage page=new RegisterPage(getDriver());
+		WithPlaceholderPage page=new WithPlaceholderPage(getDriver());
 		String namePalceHolder=page.getNameFieldAttributeValue("placeholder");
 		Assert.assertEquals("Enter your name", namePalceHolder);
 		
