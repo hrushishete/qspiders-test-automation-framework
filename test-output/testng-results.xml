@@ -1,25 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-15T15:54:30 IST" name="Default suite" finished-at="2025-05-15T15:54:42 IST" duration-ms="11774">
+  <suite started-at="2025-05-16T00:50:43 IST" name="Suite" finished-at="2025-05-16T00:52:21 IST" duration-ms="98078">
     <groups>
     </groups>
-    <test started-at="2025-05-15T15:54:30 IST" name="Default test" finished-at="2025-05-15T15:54:42 IST" duration-ms="11774">
-      <class name="com.qspiders.testcases.button.DefaultClick">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qspiders.testcases.button.DefaultClick@5656be13]" started-at="2025-05-15T15:54:30 IST" name="setup" finished-at="2025-05-15T15:54:34 IST" duration-ms="3914" status="PASS">
+    <test started-at="2025-05-16T00:50:43 IST" name="Test" finished-at="2025-05-16T00:52:21 IST" duration-ms="98078">
+      <class name="com.qspiders.testcases.button.SubmitClickTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qspiders.testcases.button.SubmitClickTest@1a5b6f42]" started-at="2025-05-16T00:51:35 IST" name="setup" finished-at="2025-05-16T00:51:44 IST" duration-ms="8140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="shoppingRegistrationFeedback()[pri:0, instance:com.qspiders.testcases.button.DefaultClick@5656be13]" started-at="2025-05-15T15:54:34 IST" name="shoppingRegistrationFeedback" finished-at="2025-05-15T15:54:41 IST" duration-ms="7390" status="PASS">
+        <test-method signature="submitClick()[pri:0, instance:com.qspiders.testcases.button.SubmitClickTest@1a5b6f42]" started-at="2025-05-16T00:51:44 IST" name="submitClick" finished-at="2025-05-16T00:51:46 IST" duration-ms="2671" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shoppingRegistrationFeedback -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qspiders.testcases.button.DefaultClick@5656be13]" started-at="2025-05-15T15:54:41 IST" name="tearDown" finished-at="2025-05-15T15:54:42 IST" duration-ms="400" status="PASS">
+        </test-method> <!-- submitClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qspiders.testcases.button.SubmitClickTest@1a5b6f42]" started-at="2025-05-16T00:51:46 IST" name="tearDown" finished-at="2025-05-16T00:51:47 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qspiders.testcases.button.DefaultClick -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qspiders.testcases.button.SubmitClickTest -->
+      <class name="com.qspiders.testcases.button.RightClickTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qspiders.testcases.button.RightClickTest@798162bc]" started-at="2025-05-16T00:50:43 IST" name="setup" finished-at="2025-05-16T00:50:54 IST" duration-ms="10514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="rightClick()[pri:0, instance:com.qspiders.testcases.button.RightClickTest@798162bc]" started-at="2025-05-16T00:50:54 IST" name="rightClick" finished-at="2025-05-16T00:50:57 IST" duration-ms="3723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rightClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qspiders.testcases.button.RightClickTest@798162bc]" started-at="2025-05-16T00:50:57 IST" name="tearDown" finished-at="2025-05-16T00:50:58 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qspiders.testcases.button.RightClickTest -->
+      <class name="com.qspiders.testcases.button.DefaultClickTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qspiders.testcases.button.DefaultClickTest@28194a50]" started-at="2025-05-16T00:50:58 IST" name="setup" finished-at="2025-05-16T00:51:22 IST" duration-ms="24160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="shoppingRegistrationFeedback()[pri:0, instance:com.qspiders.testcases.button.DefaultClickTest@28194a50]" started-at="2025-05-16T00:51:22 IST" name="shoppingRegistrationFeedback" finished-at="2025-05-16T00:51:24 IST" duration-ms="2353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shoppingRegistrationFeedback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qspiders.testcases.button.DefaultClickTest@28194a50]" started-at="2025-05-16T00:51:24 IST" name="tearDown" finished-at="2025-05-16T00:51:25 IST" duration-ms="374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qspiders.testcases.button.DefaultClickTest -->
+      <class name="com.qspiders.testcases.button.DisabledTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qspiders.testcases.button.DisabledTest@7f2cfe3f]" started-at="2025-05-16T00:51:25 IST" name="setup" finished-at="2025-05-16T00:51:32 IST" duration-ms="7604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="disabledTest()[pri:0, instance:com.qspiders.testcases.button.DisabledTest@7f2cfe3f]" started-at="2025-05-16T00:51:32 IST" name="disabledTest" finished-at="2025-05-16T00:51:35 IST" duration-ms="2579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disabledTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qspiders.testcases.button.DisabledTest@7f2cfe3f]" started-at="2025-05-16T00:51:35 IST" name="tearDown" finished-at="2025-05-16T00:51:35 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qspiders.testcases.button.DisabledTest -->
+      <class name="com.qspiders.testcases.button.DoubleClickTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qspiders.testcases.button.DoubleClickTest@5038d0b5]" started-at="2025-05-16T00:51:47 IST" name="setup" finished-at="2025-05-16T00:52:18 IST" duration-ms="31399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="satisfiedDoubleClick()[pri:0, instance:com.qspiders.testcases.button.DoubleClickTest@5038d0b5]" started-at="2025-05-16T00:52:18 IST" name="satisfiedDoubleClick" finished-at="2025-05-16T00:52:21 IST" duration-ms="2995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- satisfiedDoubleClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qspiders.testcases.button.DoubleClickTest@5038d0b5]" started-at="2025-05-16T00:52:21 IST" name="tearDown" finished-at="2025-05-16T00:52:21 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qspiders.testcases.button.DoubleClickTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

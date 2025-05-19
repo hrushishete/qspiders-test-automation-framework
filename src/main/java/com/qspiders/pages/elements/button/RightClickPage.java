@@ -18,7 +18,7 @@ public class RightClickPage {
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		wait=CustomUtilities.getWait(driver, 30);
+		wait=CustomUtilities.getWait(driver, 10);
 	}
 	
 	//====================================================================================
@@ -28,19 +28,19 @@ public class RightClickPage {
 	private WebElement rightClick;
 	
 	//Click on Satisfied Right Click button inside Right Click Element
-	@FindBy(id = "btn30")
+	@FindBy(id = "btn_a")
 	private WebElement satisfiedRightClickButton;
 	
 	//Click on Satisfied Right Click Yes
-	@FindBy(xpath = "//button[@id='btn30']//div[text()='Yes']")
+	@FindBy(xpath = "//button[@id='btn_a']//div[text()='Yes']")
 	private WebElement satisfiedRightClickButtonYes;
 	
 	//Click on Satisfied Right Click No
-	@FindBy(xpath = "//button[@id='btn30']//div[text()='No']")
+	@FindBy(xpath = "//button[@id='btn_a']//div[text()='No']")
 	private WebElement satisfiedRightClickButtonNo;
 	
 	//Element for satisfied right click message
-	@FindBy(xpath = "//button[@id='btn30']/following-sibling::span")
+	@FindBy(xpath = "//button[@id='btn_a']/following-sibling::span")
 	private WebElement satisfiedRightClickButtonMessage;
 	
 	//====================================================================================
@@ -54,6 +54,7 @@ public class RightClickPage {
 	
 	public void clickOnSatisfiedRightClickButton()
 	{
+		wait.until(ExpectedConditions.visibilityOf(satisfiedRightClickButton));
 		Actions action=CustomUtilities.actionClass(driver);
 		action.contextClick(satisfiedRightClickButton).perform();
 	}

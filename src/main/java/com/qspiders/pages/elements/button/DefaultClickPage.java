@@ -16,7 +16,7 @@ public class DefaultClickPage {
 	public DefaultClickPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		wait = CustomUtilities.getWait(driver, 30);
+		wait = CustomUtilities.getWait(driver, 10);
 	}
 	//====================================================================
 	@FindBy(id = "btn")

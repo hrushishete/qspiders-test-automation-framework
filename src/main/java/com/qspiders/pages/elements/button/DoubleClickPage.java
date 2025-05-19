@@ -19,7 +19,7 @@ public class DoubleClickPage
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		wait=CustomUtilities.getWait(driver, 30);
+		wait=CustomUtilities.getWait(driver, 10);
 		action=CustomUtilities.actionClass(driver);
 	}
 	
@@ -79,7 +79,6 @@ public class DoubleClickPage
 	{
 		return satisfiedMessage.getText();
 	}
-	
 	//====================================================================
 	
 }
